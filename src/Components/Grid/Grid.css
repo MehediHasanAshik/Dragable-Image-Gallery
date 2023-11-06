@@ -1,0 +1,38 @@
+.image-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 20px;
+  padding: 30px;
+}
+
+.add-image {
+  border: 2px dotted #ccc;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.add-image input {
+  display: none;
+}
+
+.add-image p {
+  font-weight: 700px;
+  font-size: 16px;
+}
+
+/* Mobile Devices */
+@media only screen and (max-width:688px) {
+  .image-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Tab Devices */
+@media only screen and (min-width:688px) and (max-width:992px) {
+  .image-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}

@@ -1,0 +1,14 @@
+.container {
+  /* padding: 30px; */
+  border: none;
+  border-radius: 10px;
+  background-color: white;
+  margin: 20px 100px;
+}
+
+/* Mobile Devices */
+@media only screen and (max-width:992px) {
+  .container {
+    margin: 20px;
+  }
+}
